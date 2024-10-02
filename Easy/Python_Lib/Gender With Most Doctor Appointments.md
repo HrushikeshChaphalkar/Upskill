@@ -4,8 +4,8 @@ Find the gender that has made the most number of doctor appointments.
 Output the gender along with the corresponding number of appointments.
 
 -------------------------------------------------------------------
-Solution:
-
+**Solution:**
+```python
 import pandas as pd
 import numpy as np
 
@@ -15,4 +15,4 @@ result = (
     .reset_index()
     .sort_values('total', ascending=False).head(1)
     )
-result
+```
